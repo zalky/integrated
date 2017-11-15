@@ -1,0 +1,11 @@
+{:require  [cljs.integrated.core]
+ :init-fns [cljs.integrated.core/init!]
+ :compiler-options
+ {:asset-path     "js/main.out"
+  :optimizations  :advanced
+  :source-map     false
+  :parallel-build true
+  :language-in    :es6
+  :foreign-libs   [{:file        "src/js"
+                    :module-type :es6}]}}
+
